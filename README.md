@@ -9,4 +9,4 @@ PHP integration of [Leaflet version 2](https://leafletjs.com/) JavaScript mappin
 
 For licence information see the [LICENCE](LICENCE.md) file.
 
-Documentation is at https://beastbytes.github.io/yii-leaflet/
+Documentation is at https://beastbytes.github.io/leaflet-v2/
