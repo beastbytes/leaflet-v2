@@ -1,0 +1,28 @@
+# phpstorm project files
+.idea
+
+#Documentation
+/docs/.vitepress/cache
+/docs/.vitepress/dist
+
+# composer vendor dir
+/vendor
+
+# composer itself is not needed
+composer.phar
+
+# local config
+/phpunit.xml
+/psalm.xml
+
+#php-cs-fixer
+/.php-cs-fixer.cache
+
+# logs
+/logs
+
+# Node modules
+/node_modules
+
+.env
+/docs/.vitepress/dist/

@@ -1,0 +1,66 @@
+{
+    "name": "beastbytes/leaflet",
+    "description": "Leaflet JavaScript mapping library integration for PHP",
+    "type": "library",
+    "keywords": [
+        "Leaflet",
+        "map",
+        "mapping",
+        "maps",
+        "php"
+    ],
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Chris Yates",
+            "email": "chris.l.yates@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": "^8.2"
+    },
+    "require-dev": {
+        "beastbytes/cod-php": "^1.0",
+        "friendsofphp/php-cs-fixer": "^v3.0",
+        "pestphp/pest": "^5.0",
+        "vimeo/psalm": "^6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "BeastBytes\\Leaflet\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "BeastBytes\\Leaflet\\Tests\\": "tests"
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        },
+        "policy": {
+            "advisories": {
+                "block": true
+            }
+        }
+    },
+    "scripts": {
+        "analyse": "psalm",
+        "document": "cod-php",
+        "serve": "php -S localhost:8888 -t public_html/",
+        "test": "pest --parallel",
+        "post-install-cmd": [
+            "pest --init"
+        ]
+    },
+    "scripts-descriptions": {
+        "analyse": "Run Psalm",
+        "document": "Generate documentation",
+        "serve": "Run PHP server",
+        "test": "Run all tests!"
+    }
+}
